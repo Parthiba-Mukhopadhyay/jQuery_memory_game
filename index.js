@@ -2,11 +2,25 @@ var buttonColours=["red", "blue", "green", "yellow"];
 var gamePattern=[];
 var userClickedPattern=[];
 
+var level=0;
+var started=false;
+
 $(".btn").click(function(){
     var userChosenColour=$(this).attr("id");
     userClickedPattern.push(userChosenColour);
-
+    playSound(userChosenColour);
+    animatePress(userChosenColour);
   });
+
+$(document).keypress(function(){
+  if(!started){
+    $("#title_head").text("Level "+level);
+    $("#sub_title").text("");
+    started=true;
+    nextSequence();
+  }
+});
+
 
 function nextSequence()
 {
