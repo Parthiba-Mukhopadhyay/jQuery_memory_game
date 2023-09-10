@@ -34,23 +34,28 @@
     cursor: pointer;
   }
   
-.item1{
+.red{
     background-color: red;
     color: white;
   }
   
-.item2{
+.blue{
     background-color: blue;
     color: white;
   }
   
-.item3{
+.green{
     background-color: green;
     color: white;
   }
   
-.item4{
+.yellow{
     background-color: yellow;
     color: white;
   }
+
+.pressed{
+  box-shadow: 2px 2px 4px white;
+  background-color: gray;
+}
   
