@@ -30,6 +30,13 @@ function checkAnswer(currentLevel){
       setTimeout(()=>{nextSequence();},1000);
     }
   }
+  else{
+    playSound("wrong");
+    $("#"+currentColour).addClass("wrong");
+    $("#title_head").text("Press any key to restart");
+    setTimeout(()=>{ $("#"+currentColour).removeClass("wrong");
+  },100);
+  }
 }
 
 function nextSequence()
