@@ -1,22 +1,24 @@
 .topbar{
     text-align: center;
     color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-  margin-left: 41%;;
+  margin-left: 41%;
+  font-size: 5rem;
   }
   
 .btn {
   margin: 30px;
   display: inline-block;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
   border: 10px solid black;
   border-radius: 20%;
   font-size: 5rem;
@@ -52,4 +54,17 @@
   
 .wrong{
   background-color: red;
+}
+
+.initial{
+  background-color: #4158D0;
+  background-image: linear-gradient(0deg, #4158D0 1%, #C850C0 30%, #FFCC70 66%, #ffffff 100%);
+}
+
+.instr{
+  text-align:left;
+  color: white;
+  font-size: 3rem;
+  padding-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
